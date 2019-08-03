@@ -2,7 +2,7 @@
   "name": "manhtantna.github.io",
   "version": "0.1.0",
   "private": true,
-"homepage": "https://manhtantna.github.io/",
+"homepage": "https://manhtantna.github.io/manhtantna.github.io",
 "predeploy": "npm run build",
 "deploy": "gh-pages -d build",
   "dependencies": {
