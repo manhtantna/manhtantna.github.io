@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Portfolio | Dz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <style>
+        .swiper-pagination-bullet { background: #64748b; opacity: 1; }
+        .swiper-pagination-bullet-active { background: #0ea5e9 !important; width: 1.5rem; border-radius: 4px; }
+        .glass-card { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .skill-tag { background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2); color: #7dd3fc; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-[#020617] text-slate-200">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/5 py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-xl font-black tracking-tighter text-sky-400">GAME.DEV</div>
+            <div class="flex gap-6 text-sm font-bold uppercase tracking-widest">
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-40 pb-20 px-4 text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 border border-sky-500/30 rounded-full bg-sky-500/10 text-sky-400 text-xs font-bold tracking-widest uppercase">
+            Full-Stack Game Developer
+        </div>
+        <h1 class="text-5xl md:text-8xl font-black bg-clip-text text-transparent bg-gradient-to-r from-white via-sky-400 to-indigo-500 mb-6 tracking-tighter">
+            JUST  <br> DO IT
+        </h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg md:text-xl leading-relaxed">
+            Một số game đã từng tham gia phát triển và vận hành.
+        </p>
+    </section>
+
+    <section id="projects" class="container mx-auto px-4 py-20">
+        <div class="flex items-center justify-between mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">FEATURED WORKS</h2>
+            <span id="stats" class="text-slate-500 font-mono text-sm uppercase"></span>
+        </div>
+        <div id="game-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+    </section>
+
+    <section id="skills" class="bg-slate-900/50 py-24 border-y border-white/5">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16 tracking-tight uppercase">Technical Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-sky-400 font-bold flex items-center gap-2 italic">01. Game Engines & Platforms</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Unity</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Cocos Creator</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Build Android/iOS</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-sky-400 font-bold flex items-center gap-2 italic">02. Programming Languages</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">C#</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Java</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Go</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Python</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Lua</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-sky-400 font-bold flex items-center gap-2 italic">03. Integrations & Security</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">API 3rd Party</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">IAP (Apple/Google)</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">SDK Integration</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Reverse Engineering</span>
+                        <span class="skill-tag px-4 py-2 rounded-lg text-sm font-bold">Anti-Decompile Lua</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 text-sm">
+        <p>© 2026 Developed by Dz + Gemini. Built with HTML, Tailwind & Swiper.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        // Data Projects (giữ nguyên cấu trúc cũ của bạn)
+        const myGames = [
+            { id: "mght", title: "Mega Huyền Thoại", category: "Turn-Based", files: ["1.jpg", "2.jpg", "2.png"] },
+            { id: "vohon", title: "Võ Hồn", category: "Fantasy", files: ["1.mp4"] },
+            { id: "kt", title: "Kiếm Thế", category: "MMORPG", files: ["1.mp4"] },
+            
+            { id: "gabong", title: "Gà Bông", category: "Idle Casual", files: ["1.jpg", "1.mp4", "2.jpg", "3.jpg", "4.jpg", "5.jpg"] },
+            { id: "herorpg", title: "Hero RPG", category: "RPG", files: ["1.jpg", "1.mp4", "2.jpg"] },
+            { id: "3qmeo", title: "3Q Mèo", category: "Strategy", files: ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"] },
+            
+            { id: "caucaidle", title: "Câu Cá Idle", category: "Idle Game", files: ["1.jpg", "1.mp4", "2.jpg"] },
+            { id: "dragonz", title: "DragonZ", category: "Action", files: ["1.mp4"] },
+            { id: "htkn", title: "Hơi Thở Kỷ Nguyên", category: "Turn-Based", files: ["1.jpg", "1.MP4"] }, 
+            { id: "vdng", title: "Võ Đài Nhẫn Giả", category: "Turn-Based", files: ["1.mp4"] },
+            
+        ];
+
+
+        function initPortfolio() {
+            const grid = document.getElementById('game-grid');
+            document.getElementById('stats').innerText = `${myGames.length} Projects`;
+
+            myGames.forEach((game, idx) => {
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-[2rem] overflow-hidden flex flex-col hover:border-sky-500/40 hover:translate-y-[-10px] transition-all duration-500 shadow-2xl";
+                
+                const slidesHtml = game.files.map(file => {
+                    const path = `images/${game.id}/${file}`;
+                    const isVideo = file.toLowerCase().endsWith('.mp4');
+                    return `
+                        <div class="swiper-slide cursor-zoom-in" data-fancybox="gallery-${game.id}" data-src="${path}" data-caption="${game.title}">
+                            ${isVideo 
+                                ? `<video autoplay muted loop playsinline class="w-full h-full object-cover"><source src="${path}" type="video/mp4"></video>`
+                                : `<img src="${path}" class="w-full h-full object-cover" loading="lazy">`
+                            }
+                        </div>`;
+                }).join('');
+
+                card.innerHTML = `
+                    <div class="h-64 w-full relative">
+                        <div class="swiper swiper-${idx}">
+                            <div class="swiper-wrapper">${slidesHtml}</div>
+                            ${game.files.length > 1 ? `<div class="swiper-pagination"></div>` : ''}
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <span class="text-sky-400 text-[10px] font-bold tracking-widest uppercase mb-2 block">${game.category}</span>
+                        <h3 class="text-2xl font-bold text-white mb-2 leading-tight">${game.title}</h3>
+                        <p class="text-slate-500 text-xs font-mono uppercase">Assets: ${game.files.length}</p>
+                    </div>
+                `;
+                grid.appendChild(card);
+
+                if (game.files.length > 1) {
+                    new Swiper(`.swiper-${idx}`, {
+                        loop: true,
+                        autoplay: { delay: 3000, disableOnInteraction: false },
+                        pagination: { el: ".swiper-pagination", clickable: true },
+                    });
+                }
+            });
+
+            Fancybox.bind("[data-fancybox]", { Thumbs: { autoStart: true } });
+        }
+
+        window.onload = initPortfolio;
+    </script>
+</body>
+</html>
